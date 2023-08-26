@@ -13,27 +13,34 @@
 
 console.log ("Desafio Felipão da DIO.ME")
 let Nome = "Lezard"
-let XP = 25360
+let XP = 700
 let Nivel = " "
+let TotalXP = 0
+
+for (let i = 1; i <= 5; i++){
+    console.log( Nome +" ganhou na "+ i +"ª batalha "+ XP+"XP")
+    TotalXP = TotalXP + XP
+    XP += 285
+}
 
 if (XP < 1000){
      Nivel = "Ferro"
-}else if (XP >1000 && XP<= 2000){
+}else if (TotalXP >1000 && TotalXP<= 2000){
      Nivel = "Bronze"
-}else if (XP >2000 && XP<= 5000){
+}else if (TotalXP >2000 && TotalXP<= 5000){
     Nivel = "Prata"
-}else if (XP >5000 && XP<= 7000){
+}else if (TotalXP >5000 && TotalXP<= 7000){
     Nivel = "Ouro"
-}else if (XP >7000 && XP<= 8000){
+}else if (TotalXP >7000 && TotalXP<= 8000){
    Nivel = "Platina"
-}else if (XP >8000 && XP<= 9000){
+}else if (TotalXP >8000 && TotalXP<= 9000){
     Nivel = "Ascendente"
-}else if (XP >9000 && XP<= 10000){
+}else if (TotalXP >9000 && TotalXP<= 10000){
    Nivel = "Imortal"
-}else if (XP >10000){
+}else if (TotalXP >10000){
    Nivel = "Radiante"
 }
 
 
 
-console.log ("O personagem "+ Nome + " ganhou um total de " + XP + "XP e sua classificacção de nível é " + Nivel)
+console.log ("O personagem "+ Nome + " ganhou um total de " + TotalXP + "XP e sua classificacção de nível é " + Nivel)
