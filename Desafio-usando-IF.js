@@ -19,7 +19,7 @@ let TotalXP = 0
 
 for (let i = 1; i <= 5; i++){
     console.log( Nome +" ganhou na "+ i +"ª batalha "+ XP+"XP")
-    TotalXP = TotalXP + XP
+    TotalXP += XP
     XP += 285
 }
 
