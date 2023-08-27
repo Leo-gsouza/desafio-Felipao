@@ -13,14 +13,15 @@
 
 console.log ("Desafio Felipão da DIO.ME")
 let Nome = "Lezard"
-let XP = 700
+let XP = 250
 let Nivel = " "
 let TotalXP = 0
 
 for (let i = 1; i <= 5; i++){
     console.log( Nome +" ganhou na "+ i +"ª batalha "+ XP+"XP")
     TotalXP += XP
-    XP += 285
+    XP += 185
+
 }
 
 if (XP < 1000){
